@@ -13,7 +13,7 @@ Thank you for your interest in contributing to the Shape ecosystem! This guide c
 
 ## Code of Conduct
 
-All Shape projects adhere to the Contributor Covenant Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to conduct@shapestone.dev.
+All Shape projects adhere to the Contributor Covenant Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to conduct@shapestone.com.
 
 ## Repository Structure
 
