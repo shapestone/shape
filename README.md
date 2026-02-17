@@ -24,6 +24,7 @@ The Shape ecosystem is organized as **independent repositories**:
 - **[shape-yaml](https://github.com/shapestone/shape-yaml)** - YAML parser
 - **[shape-xml](https://github.com/shapestone/shape-xml)** - XML parser
 - **[shape-csv](https://github.com/shapestone/shape-csv)** - CSV parser
+- **[shape-http](https://github.com/shapestone/shape-http)** - HTTP/1.1 parser
 - **[shape-props](https://github.com/shapestone/shape-props)** - Properties parser
 
 Each parser is a separate Git repository that can be used independently.
@@ -53,6 +54,9 @@ go get github.com/shapestone/shape-yaml
 
 # Install XML parser
 go get github.com/shapestone/shape-xml
+
+# Install HTTP parser
+go get github.com/shapestone/shape-http
 ```
 
 ### Use the Core Infrastructure
@@ -76,6 +80,7 @@ Production-ready parsers for standard data formats:
 - **[shape-yaml](https://github.com/shapestone/shape-yaml)** - YAML parser and validator
 - **[shape-xml](https://github.com/shapestone/shape-xml)** - XML parser and validator
 - **[shape-csv](https://github.com/shapestone/shape-csv)** - CSV parser with schema validation
+- **[shape-http](https://github.com/shapestone/shape-http)** - HTTP/1.1 parser and marshaler
 - **[shape-props](https://github.com/shapestone/shape-props)** - Java properties file parser
 
 ### Validator CLIs
