@@ -36,7 +36,7 @@ go get github.com/shapestone/shape-xml
 go get github.com/shapestone/shape-csv
 
 # Install Properties parser
-go get github.com/shapestone/shape-props
+go get github.com/shapestone/shape-properties
 ```
 
 ### Install Validator CLIs

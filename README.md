@@ -25,7 +25,7 @@ The Shape ecosystem is organized as **independent repositories**:
 - **[shape-xml](https://github.com/shapestone/shape-xml)** - XML parser
 - **[shape-csv](https://github.com/shapestone/shape-csv)** - CSV parser
 - **[shape-http](https://github.com/shapestone/shape-http)** - HTTP/1.1 parser
-- **[shape-props](https://github.com/shapestone/shape-props)** - Properties parser
+- **[shape-properties](https://github.com/shapestone/shape-properties)** - Properties parser
 
 Each parser is a separate Git repository that can be used independently.
 
@@ -81,7 +81,7 @@ Production-ready parsers for standard data formats:
 - **[shape-xml](https://github.com/shapestone/shape-xml)** - XML parser and validator
 - **[shape-csv](https://github.com/shapestone/shape-csv)** - CSV parser with schema validation
 - **[shape-http](https://github.com/shapestone/shape-http)** - HTTP/1.1 parser and marshaler
-- **[shape-props](https://github.com/shapestone/shape-props)** - Java properties file parser
+- **[shape-properties](https://github.com/shapestone/shape-properties)** - Java properties file parser
 
 ### Validator CLIs
 

@@ -101,9 +101,9 @@ CSV parser with schema validation:
 - Parse structured data files
 - Transform CSV with schemas
 
-#### shape-props
+#### shape-properties
 
-**Repository:** [github.com/shapestone/shape-props](https://github.com/shapestone/shape-props)
+**Repository:** [github.com/shapestone/shape-properties](https://github.com/shapestone/shape-properties)
 
 Java properties file parser:
 - Standard .properties file format
