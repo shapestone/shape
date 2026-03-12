@@ -1,5 +1,7 @@
 # Shape - Parser Infrastructure Ecosystem
 
+> **Documentation and quick-start hub for the Shape parser ecosystem — Go libraries and tools for parsing structured data formats.**
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 **Organization:** [github.com/shapestone](https://github.com/shapestone)
@@ -8,11 +10,19 @@ Shape is a comprehensive parser infrastructure ecosystem for structured data for
 
 ## What is Shape?
 
+Writing a parser from scratch is tedious and error-prone. Shape solves this by providing a shared infrastructure layer — a reusable Abstract Syntax Tree (AST) framework, tokenizer API, and schema validator — that every parser in the ecosystem builds on. The result is a family of consistent, well-tested parsers for JSON, YAML, XML, CSV, Properties, and more, all sharing the same conventions and interfaces.
+
 Shape provides a complete parser ecosystem built on reusable infrastructure:
 
-- **[shape-core](https://github.com/shapestone/shape-core)** - Core parser infrastructure (AST, tokenizer, validator, grammar)
+- **[shape-core](https://github.com/shapestone/shape-core)** - Core parser infrastructure (Abstract Syntax Tree (AST), tokenizer, validator, grammar)
 - **Data Format Parsers** - Production-ready parsers for JSON, YAML, XML, CSV, and more
 - **Tools & Utilities** - Validation, transformation, and analysis tools
+
+## Who It's For
+
+**Go developers using parsers** — drop-in libraries for parsing and validating JSON, YAML, XML, CSV, and Properties files with schema validation, rich error reporting, and query support (JSONPath, XPath).
+
+**Infrastructure and tooling developers** — use `shape-core` to build your own parser on a proven foundation. The tokenizer, Abstract Syntax Tree (AST) framework, and grammar verification layer handle the hard parts, so you can focus on your domain-specific language (DSL) or format.
 
 ## Repository Structure
 
@@ -43,20 +53,25 @@ This repository (`shape`) contains:
 
 ### Install a Parser
 
-Each parser can be installed independently:
+Install individual parsers using `make` or `go get` directly:
 
 ```bash
 # Install JSON parser
-go get github.com/shapestone/shape-json
+make install-json
 
 # Install YAML parser
-go get github.com/shapestone/shape-yaml
+make install-yaml
 
-# Install XML parser
-go get github.com/shapestone/shape-xml
+# Install all parsers at once
+make install-all
+```
 
-# Install HTTP parser
-go get github.com/shapestone/shape-http
+### Install Validator CLI Tools
+
+Command-line interface (CLI) validator tools can be installed with a single command:
+
+```bash
+make install-tools
 ```
 
 ### Use the Core Infrastructure
@@ -64,11 +79,24 @@ go get github.com/shapestone/shape-http
 To build your own parser:
 
 ```bash
-# Install shape-core
-go get github.com/shapestone/shape-core
+make install-core
 ```
 
 See the [Getting Started Guide](docs/GETTING_STARTED.md) for detailed instructions.
+
+### Make Target Reference
+
+| Target | Purpose |
+|---|---|
+| `make help` | Print all available targets |
+| `make install-core` | Install shape-core (parser infrastructure) |
+| `make install-json` | Install shape-json (JSON parser) |
+| `make install-yaml` | Install shape-yaml (YAML parser) |
+| `make install-xml` | Install shape-xml (XML parser) |
+| `make install-csv` | Install shape-csv (CSV parser) |
+| `make install-properties` | Install shape-properties (Properties parser) |
+| `make install-all` | Install all parser libraries |
+| `make install-tools` | Install all validator CLI tools |
 
 ## Parser Projects
 
@@ -85,9 +113,9 @@ Production-ready parsers for standard data formats:
 
 ### Validator CLIs
 
-Command-line tools for validating data files:
+Command-line interface (CLI) tools for validating data files:
 
-- **shape-jsonv** - JSON validation CLI
+- **shape-jsonv** - JSON validation command-line interface (CLI)
 - **shape-yamlv** - YAML validation CLI
 - **shape-xmlv** - XML validation CLI
 - **shape-csvv** - CSV validation CLI
@@ -97,7 +125,7 @@ Command-line tools for validating data files:
 
 **[shape-core](https://github.com/shapestone/shape-core)** provides the foundational components:
 
-- **AST Framework** - Type-safe node definitions for validation schemas
+- **Abstract Syntax Tree (AST) Framework** - Type-safe node definitions for validation schemas
 - **Tokenizer API** - Build custom parsers with matchers
 - **Parser Interface** - Standardized parsing patterns
 - **Schema Validator Framework** - Semantic validation with custom types
@@ -138,7 +166,7 @@ result, err := parser.Parse(jsonData)
 ```go
 import "github.com/shapestone/shape-core/pkg/tokenizer"
 
-// Use Shape's tokenizer for your DSL
+// Use Shape's tokenizer for your domain-specific language (DSL)
 tok := tokenizer.NewTokenizer(
     tokenizer.StringMatcherFunc("LBrace", "{"),
     tokenizer.RegexMatcherFunc("Identifier", `[a-zA-Z_]\w*`),
