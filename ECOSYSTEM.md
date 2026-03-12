@@ -27,9 +27,9 @@ The foundation of the Shape ecosystem, providing reusable parser infrastructure:
 - Build schema transformation utilities
 
 **Documentation:**
-- [shape-core README](shape-core/README.md)
-- [Parser Implementation Guide](shape-core/docs/PARSER_IMPLEMENTATION_GUIDE.md)
-- [Architecture Documentation](shape-core/docs/architecture/ARCHITECTURE.md)
+- [shape-core README](https://github.com/shapestone/shape-core/blob/main/README.md)
+- [Parser Implementation Guide](https://github.com/shapestone/shape-core/blob/main/docs/PARSER_IMPLEMENTATION_GUIDE.md)
+- [Architecture Documentation](https://github.com/shapestone/shape-core/blob/main/docs/architecture/ARCHITECTURE.md)
 
 ## Parser Projects
 
@@ -202,7 +202,7 @@ shape-jsonv validate data.json --schema schema.json
 If you want to build a custom parser:
 
 1. **Install shape-core** - `go get github.com/shapestone/shape-core`
-2. **Read the guide** - [Parser Implementation Guide](shape-core/docs/PARSER_IMPLEMENTATION_GUIDE.md)
+2. **Read the guide** - [Parser Implementation Guide](https://github.com/shapestone/shape-core/blob/main/docs/PARSER_IMPLEMENTATION_GUIDE.md)
 3. **Study examples** - Review [shape-json](https://github.com/shapestone/shape-json) as reference
 4. **Use the tokenizer** - Build your parser using shape-core's tokenizer API
 
@@ -286,7 +286,7 @@ To contribute a new parser to the ecosystem:
 - Has comprehensive tests and documentation
 - Follows Shape ecosystem patterns
 
-See [shape-core CONTRIBUTING.md](shape-core/CONTRIBUTING.md) for format inclusion policy.
+See [shape-core CONTRIBUTING.md](https://github.com/shapestone/shape-core/blob/main/CONTRIBUTING.md) for format inclusion policy.
 
 ### Creating Custom DSL Parsers
 
@@ -302,7 +302,7 @@ type MyDSLParser struct {
 ```
 
 Resources:
-- [Parser Implementation Guide](shape-core/docs/PARSER_IMPLEMENTATION_GUIDE.md)
+- [Parser Implementation Guide](https://github.com/shapestone/shape-core/blob/main/docs/PARSER_IMPLEMENTATION_GUIDE.md)
 - [Inkling Example](https://github.com/shapestone/inkling)
 
 ## Version Compatibility
