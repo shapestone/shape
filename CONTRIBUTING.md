@@ -213,6 +213,15 @@ Custom DSL parsers:
 
 ## Development Guidelines
 
+### Prerequisites
+
+Before contributing to parser repositories, install the developer tools:
+
+```bash
+# Install all validator CLI tools (requires Go 1.25+)
+make install-tools
+```
+
 ### Code Style
 
 - Follow Go best practices
@@ -236,15 +245,17 @@ chore: update dependencies
 
 ### Testing
 
-All code changes must include tests:
+This documentation repository contains no Go source code. To run tests in a parser repository, navigate to that repository and use its own test commands. For convenience targets related to the ecosystem, use:
 
 ```bash
-# Run tests
-go test ./...
+# See all available make targets
+make help
 
-# Check coverage
-go test -cover ./...
+# Install a specific parser for local development
+make install-json
 ```
+
+For parser-specific test instructions, see the CONTRIBUTING.md in the respective parser repository.
 
 ### Documentation
 
