@@ -1,0 +1,41 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "shapestone",
+    "shapejson",
+    "codecov",
+    "dependabot",
+    "codeql",
+    "sbom",
+    "spdx",
+    "sigstore",
+    "cosign",
+    "openssf",
+    "github",
+    "uuid",
+    "repo",
+    "refactoring",
+    "linter",
+    "linters",
+    "workflow",
+    "workflows",
+    "subproject",
+    "subprojects",
+    "dotfile",
+    "dotfiles",
+    "CHANGELOG",
+    "ROADMAP",
+    "Makefile",
+    "README",
+    "LLM",
+    "testdata"
+  ],
+  "ignoreWords": [],
+  "ignorePaths": [
+    "node_modules",
+    ".git",
+    "vendor",
+    "go.sum"
+  ]
+}
