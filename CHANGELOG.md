@@ -29,5 +29,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Corrected contact email domain in `CONTRIBUTING.md`
 - Removed build status badge from documentation-only repository (`README.md`)
 
-[Unreleased]: https://github.com/shapestone/shape-eco/compare/v0.9.0...HEAD
-[0.9.0]: https://github.com/shapestone/shape-eco/releases/tag/v0.9.0
+[Unreleased]: https://github.com/shapestone/shape/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/shapestone/shape/releases/tag/v0.9.0
